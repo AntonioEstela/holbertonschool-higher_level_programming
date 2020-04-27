@@ -24,7 +24,7 @@ Project to get to know the basics about the **Python** programming language.
 
 | Filename                                                     | Description                                                  |
 | ------------------------------------------------------------ | ------------------------------------------------------------ |
-| [`0-run`]([0-run](https://github.com/AntonioEstela/holbertonschool-higher_level_programming/blob/master/0x00-python-hello_world/0-run)) | Shell script that runs a Python script.                      |
+| [`0-run`](https://github.com/AntonioEstela/holbertonschool-higher_level_programming/blob/master/0x00-python-hello_world/0-run) | Shell script that runs a Python script.                      |
 | [`1-run_inline`](https://github.com/AntonioEstela/holbertonschool-higher_level_programming/blob/master/0x00-python-hello_world/1-run_inline) | Shell script that runs a Python script, where Python code is saved in an environment variable |
 | [`2-print.py`](https://github.com/AntonioEstela/holbertonschool-higher_level_programming/blob/master/0x00-python-hello_world/2-print.py) | Python script that prints exactly `"Programming is like building a multilingual puzzle`, followed by a new line. |
 | [`3-print_number.py`](https://github.com/AntonioEstela/holbertonschool-higher_level_programming/blob/master/0x00-python-hello_world/3-print_number.py) | Prints a message with print function, using format           |
