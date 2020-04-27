@@ -18,7 +18,7 @@ int check_cycle(listint_t *list)
 
 		if (check == head)
 		{
-			return(1);
+			return (1);
 		}
 	}
 	return (0);
