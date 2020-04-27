@@ -12,5 +12,5 @@ Repository for high level programming projects, developed during the study proce
 
 ### [**Antonio Estela**](https://github.com/AntonioEstela) Full Stack Software Engineer sutdent at [**Holberton School**](https://www.holbertonschool.com/)
 
--  [**Twitter**](https://twitter.com/Antonio__Estela) **|** [**Linkedin**]([https://www.linkedin.com/in/antonio-jos%C3%A9-estela-7b2a64156/](https://www.linkedin.com/in/antonio-josé-estela-7b2a64156/))
+-  [**Twitter**](https://twitter.com/Antonio__Estela) **|** [**Linkedin**](https://www.linkedin.com/in/antonio-josé-estela-7b2a64156/)
 
