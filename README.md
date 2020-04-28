@@ -6,7 +6,7 @@ Repository for high level programming projects, developed during the study proce
 
 |                     Name of the project                      |                         Description                          |
 | :----------------------------------------------------------: | :----------------------------------------------------------: |
-| [`0x00-hello_world`](https://github.com/AntonioEstela/holbertonschool-higher_level_programming/tree/master/0x00-python-hello_world) | Project to get to know the basics about the **Python** programming language |
+| [`0x00-python-hello_world`](https://github.com/AntonioEstela/holbertonschool-higher_level_programming/tree/master/0x00-python-hello_world) | Project to get to know the basics about the **Python** programming language |
 
 ## Developed by:
 
