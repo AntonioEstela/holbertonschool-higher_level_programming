@@ -24,20 +24,24 @@ Project to get to know the basics about the **Python** programming language.
 
 | Filename                                                     | Description                                                  |
 | ------------------------------------------------------------ | ------------------------------------------------------------ |
-| [`0-run`](https://github.com/AntonioEstela/holbertonschool-higher_level_programming/blob/master/0x00-python-hello_world/0-run) | Shell script that runs a Python script.                      |
-| [`1-run_inline`](https://github.com/AntonioEstela/holbertonschool-higher_level_programming/blob/master/0x00-python-hello_world/1-run_inline) | Shell script that runs a Python script, where Python code is saved in an environment variable |
-| [`2-print.py`](https://github.com/AntonioEstela/holbertonschool-higher_level_programming/blob/master/0x00-python-hello_world/2-print.py) | Python script that prints exactly `"Programming is like building a multilingual puzzle`, followed by a new line. |
-| [`3-print_number.py`](https://github.com/AntonioEstela/holbertonschool-higher_level_programming/blob/master/0x00-python-hello_world/3-print_number.py) | Prints a message with print function, using format           |
-| [`4-print_float.py`](https://github.com/AntonioEstela/holbertonschool-higher_level_programming/blob/master/0x00-python-hello_world/4-print_float.py) | Prints a float with print function, using format and precission |
-| [`5-print_string.py`](https://github.com/AntonioEstela/holbertonschool-higher_level_programming/blob/master/0x00-python-hello_world/5-print_string.py) | Prints 3 times a string using print function with format     |
-| [`6-concat.py`](https://github.com/AntonioEstela/holbertonschool-higher_level_programming/blob/master/0x00-python-hello_world/6-concat.py) | Concatenates strings and prints the result                   |
-| [`7-edges.py`](https://github.com/AntonioEstela/holbertonschool-higher_level_programming/blob/master/0x00-python-hello_world/7-edges.py) | Prints some letters of a string                              |
-| [`8-concat_edges.py`](https://github.com/AntonioEstela/holbertonschool-higher_level_programming/blob/master/0x00-python-hello_world/8-concat_edges.py) | Prints some parts of a string                                |
-| [`9-easter_egg.py`](https://github.com/AntonioEstela/holbertonschool-higher_level_programming/blob/master/0x00-python-hello_world/9-easter_egg.py) | Prints "The Zen of Python"                                   |
-| [`10-check_cycle.c`](https://github.com/AntonioEstela/holbertonschool-higher_level_programming/blob/master/0x00-python-hello_world/10-check_cycle.c) | Function in C that checks if a singly linked list has a cycle in it. |
-| [`100-write.py`](https://github.com/AntonioEstela/holbertonschool-higher_level_programming/blob/master/0x00-python-hello_world/100-write.py) | Python script that prints `and that piece of art is useful - Dora Korpar, 2015-10-19` with `write` sys, followed by a new line. |
-| [`101-compile`](https://github.com/AntonioEstela/holbertonschool-higher_level_programming/blob/master/0x00-python-hello_world/101-compile)                                            | Shell script that compiles a Python script file.             |
-| [`102-magic_calculation.py`]()                               | Python function that does exactly the same as a given disassembler |
+| [`0-positive_or_negative.py`](https://github.com/AntonioEstela/holbertonschool-higher_level_programming/blob/master/0x01-python-if_else_loops_functions/0-positive_or_negative.py) | Program that prints if a number is positive, zero or negative. |
+| [`1-last_digit.py`](https://github.com/AntonioEstela/holbertonschool-higher_level_programming/blob/master/0x01-python-if_else_loops_functions/1-last_digit.py) | Program that prints the last digit of a given number. |
+| [`2-print_alphabet.py`](https://github.com/AntonioEstela/holbertonschool-higher_level_programming/blob/master/0x01-python-if_else_loops_functions/2-print_alphabet.py) | Program that prints the ASCII alphabet, in lowercase, not followed by a new line. |
+| [`3-print_alphabt.py`](https://github.com/AntonioEstela/holbertonschool-higher_level_programming/blob/master/0x01-python-if_else_loops_functions/3-print_alphabt.py) | Program that prints the ASCII alphabet, in lowercase, not followed by a new line. |
+| [`4-print_hexa.py`](https://github.com/AntonioEstela/holbertonschool-higher_level_programming/blob/master/0x01-python-if_else_loops_functions/4-print_hexa.py) | Program that prints all numbers from 0 to 98 in decimal and in hexadecimal. |
+| [`5-print_comb2.py`](https://github.com/AntonioEstela/holbertonschool-higher_level_programming/blob/master/0x00-python-hello_world/5-print_string.py) | Program that prints numbers from 0 to 99. |
+| [`6-print_comb3.py`](https://github.com/AntonioEstela/holbertonschool-higher_level_programming/blob/master/0x01-python-if_else_loops_functions/6-print_comb3.py) | Pprogram that prints all possible different combinations of two digits. |
+| [`7-islower.py`](https://github.com/AntonioEstela/holbertonschool-higher_level_programming/blob/master/0x01-python-if_else_loops_functions/7-islower.py) | Function that checks for lowercase character. |
+| [`8-uppercase.py`](https://github.com/AntonioEstela/holbertonschool-higher_level_programming/blob/master/0x01-python-if_else_loops_functions/8-uppercase.py) | Function that prints a string in uppercase followed by a new line. |
+| [`9-print_last_digit.py`](https://github.com/AntonioEstela/holbertonschool-higher_level_programming/blob/master/0x01-python-if_else_loops_functions/9-print_last_digit.py) | Function that prints the last digit of a number. |
+| [`10-add.py`](https://github.com/AntonioEstela/holbertonschool-higher_level_programming/blob/master/0x01-python-if_else_loops_functions/10-add.py) | Function that adds two integers and returns the result. |
+| [`11-pow.py`](https://github.com/AntonioEstela/holbertonschool-higher_level_programming/blob/master/0x01-python-if_else_loops_functions/11-pow.py) | Function that computes a to the power of b and return the value. |
+| [`12-fizzbuzz.py`](https://github.com/AntonioEstela/holbertonschool-higher_level_programming/blob/master/0x01-python-if_else_loops_functions/12-fizzbuzz.py)  Function that prints the numbers from 1 to 100 separated by a space. |
+| [`13-insert_number.py`](https://github.com/AntonioEstela/holbertonschool-higher_level_programming/blob/master/0x01-python-if_else_loops_functions/13-insert_number.c) | Function in C that inserts a number into a sorted singly linked list. |
+| [`100-print_tebalpha.py`](https://github.com/AntonioEstela/holbertonschool-higher_level_programming/blob/master/0x01-python-if_else_loops_functions/100-print_tebahpla.py) | Program that prints the ASCII alphabet, in reverse order, alternating lowercase and uppercase (`z` in lowercase and `Y` in uppercase) , not followed by a new line. |
+| [`101-remove_char_at.py`](https://github.com/AntonioEstela/holbertonschool-higher_level_programming/blob/master/0x01-python-if_else_loops_functions/101-remove_char_at.py) | Function that creates a copy of the string, removing the character at the position n. |
+| [`102-magic_calculation.py`](https://github.com/AntonioEstela/holbertonschool-higher_level_programming/blob/master/0x01-python-if_else_loops_functions/102-magic_calculation.py) | Python function that does exactly the same as a given disassembler |
+
 
 ## Developed by:
 

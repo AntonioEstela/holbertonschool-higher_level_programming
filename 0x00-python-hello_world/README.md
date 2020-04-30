@@ -37,7 +37,7 @@ Project to get to know the basics about the **Python** programming language.
 | [`10-check_cycle.c`](https://github.com/AntonioEstela/holbertonschool-higher_level_programming/blob/master/0x00-python-hello_world/10-check_cycle.c) | Function in C that checks if a singly linked list has a cycle in it. |
 | [`100-write.py`](https://github.com/AntonioEstela/holbertonschool-higher_level_programming/blob/master/0x00-python-hello_world/100-write.py) | Python script that prints `and that piece of art is useful - Dora Korpar, 2015-10-19` with `write` sys, followed by a new line. |
 | [`101-compile`](https://github.com/AntonioEstela/holbertonschool-higher_level_programming/blob/master/0x00-python-hello_world/101-compile)                                            | Shell script that compiles a Python script file.             |
-| [`102-magic_calculation.py`]()                               | Python function that does exactly the same as a given disassembler |
+| [`102-magic_calculation.py`](https://github.com/AntonioEstela/holbertonschool-higher_level_programming/blob/master/0x00-python-hello_world/102-magic_calculation.py)                               | Python function that does exactly the same as a given disassembler |
 
 ## Developed by:
 
