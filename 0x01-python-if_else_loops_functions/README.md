@@ -39,8 +39,8 @@ Project to get to know the basics about the **Python** programming language.
 | [`12-fizzbuzz.py`](https://github.com/AntonioEstela/holbertonschool-higher_level_programming/blob/master/0x01-python-if_else_loops_functions/12-fizzbuzz.py) | Function that prints the numbers from 1 to 100 separated by a space. |
 | [`13-insert_number.py`](https://github.com/AntonioEstela/holbertonschool-higher_level_programming/blob/master/0x01-python-if_else_loops_functions/13-insert_number.c) | Function in C that inserts a number into a sorted singly linked list. |
 | [`100-print_tebalpha.py`](https://github.com/AntonioEstela/holbertonschool-higher_level_programming/blob/master/0x01-python-if_else_loops_functions/100-print_tebahpla.py) | Program that prints the ASCII alphabet, in reverse order, alternating lowercase and uppercase (`z` in lowercase and `Y` in uppercase) , not followed by a new line. |
-| [`101-remove_char_at.py`](https://github.com/AntonioEstela/holbertonschool-higher_level_programming/blob/master/0x01-python-if_else_loops_functions/101-remove_char_at.py) | Function that creates a copy of the string, removing the character at the position n. |
-| [`102-magic_calculation.py`](https://github.com/AntonioEstela/holbertonschool-higher_level_programming/blob/master/0x01-python-if_else_loops_functions/102-magic_calculation.py) | Python function that does exactly the same as a given disassembler |
+| [`101-remove_char_at.py`](https://github.com/AntonioEstela/holbertonschool-higher_level_programming/blob/master/0x01-python-if_else_loops_functions/101-remove_char_at.py) | Function that creates a copy of the string, removing the character at the position `n`. |
+| [`102-magic_calculation.py`](https://github.com/AntonioEstela/holbertonschool-higher_level_programming/blob/master/0x01-python-if_else_loops_functions/102-magic_calculation.py) | Function that does exactly the same as a given disassembler. |
 
 
 ## Developed by:
