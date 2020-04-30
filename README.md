@@ -7,6 +7,7 @@ Repository for high level programming projects, developed during the study proce
 |                     Name of the project                      |                         Description                          |
 | :----------------------------------------------------------: | :----------------------------------------------------------: |
 | [`0x00-python-hello_world`](https://github.com/AntonioEstela/holbertonschool-higher_level_programming/tree/master/0x00-python-hello_world) | Project to get to know the basics about the **Python** programming language |
+| [`0x01-python-if_else_loops_functions`](https://github.com/AntonioEstela/holbertonschool-higher_level_programming/tree/master/0x01-python-if_else_loops_functions) | Project to learn how to use if, else, loops and functions in **Python** |
 
 ## Developed by:
 
