@@ -52,17 +52,20 @@ class Square:
         self.__position = value
 
     def my_print(self):
-        """print the Square"""
-        size = self.__size
-        pos = self.__position
-        if size is not 0:
-            for check in range(pos[1]):
-                print()
-            for move in range(size):
-                for spaces in range(pos[0]):
+        """Method that prints the square"""
+
+        if self.__size > 0:
+            for i in range(self.__position[1]):
+                print("")
+
+            for i in range(self.__size):
+
+                for sp in range(self.__position[0]):
                     print(" ", end="")
-                for hasht in range(size):
+
+                for j in range(self.__size):
                     print("#", end="")
-                print()
+
+                print("")
         else:
             print("")
