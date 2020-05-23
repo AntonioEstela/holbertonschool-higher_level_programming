@@ -1,4 +1,4 @@
-#!/usr/bin/pypthon3
+#!/usr/bin/python3
 """
 Function that prints My name is followed by:
 <first name> and <last_name>
