@@ -23,3 +23,4 @@ class TestMax_integer(unittest.TestCase):
         self.assertIsNone(max_integer([]))
         self.assertNotIsInstance(max_integer([]), int)
         self.assertIsInstance(max_integer([23, 34, 54]), int)
+        self.assertEqual(max_integer([8]), 8)
