@@ -22,7 +22,8 @@ def text_indentation(text):
                 print("\n")
                 try:
                     if text[i + 1] == " ":
-                        i += 1
+                        while text[i + 1] == " ":
+                            i += 1
                 except Exception:
                     pass
             i += 1

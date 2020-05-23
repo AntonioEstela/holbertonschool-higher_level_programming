@@ -65,6 +65,15 @@ correct cases
     Python is 
      cool
 
+    >>> text_indentation("Holberton. School? How are you:    John")
+    Holberton.
+    <BLANKLINE>
+    School?
+    <BLANKLINE>
+    How are you:
+    <BLANKLINE>
+    John
+
 error cases
 
     >>> text_indentation(None)
