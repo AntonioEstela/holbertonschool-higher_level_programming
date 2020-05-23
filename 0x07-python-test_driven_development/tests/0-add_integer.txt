@@ -30,6 +30,10 @@ correct cases
     40
 
 error cases
+    >>> add_integer(56, float("NaN"))
+    Traceback (most recent call last):
+    ValueError: cannot convert float NaN to integer
+
     >>> add_integer("Hello", 10)
     Traceback (most recent call last):
     TypeError: a must be an integer
