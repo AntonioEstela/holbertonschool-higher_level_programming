@@ -1,0 +1,63 @@
+=============================
+The ``2-matrix_divided`` module
+=============================
+
+Using ``matrix_divided``
+---------------------
+
+Import the function:
+
+    >>> matrix_divided = __import__('2-matrix_divided').matrix_divided
+
+Now test it
+
+correct cases
+    >>> matrix_divided([[1, 2, 3],[4, 5, 6]], 3)
+    [[0.33, 0.67, 1.0], [1.33, 1.67, 2.0]]
+
+    >>> matrix = [[-1000, (50 ** 2), 40], [(23 ** 4), (777 * 40), 993]]
+    >>> matrix_divided(matrix, 2)
+    [[-500.0, 1250.0, 20.0], [139920.5, 15540.0, 496.5]]
+
+
+    >>> matrix = [[1.5, 2, 3.3],[4, 5, 6]]
+    >>> matrix_divided(matrix, 3)
+    [[0.5, 0.67, 1.1], [1.33, 1.67, 2.0]]
+
+    >>> matrix_divided([[1.5, 2, 3.3],[55.65, 60.7, 69.34]], 4)
+    [[0.38, 0.5, 0.82], [13.91, 15.18, 17.34]]
+
+
+    >>> matrix_divided([[1.5, 2, 3.3],[55.65, 60.7, 69.34]], 23.5)
+    [[0.06, 0.09, 0.14], [2.37, 2.58, 2.95]]
+
+
+error cases
+    >>> matrix_divided([[], []], 10)
+    Traceback (most recent call last):
+    TypeError: matrix must be a matrix (list of lists) of integers/floats
+
+    >>> matrix_divided([[1.5, 2, 3.3],[55.65, 60.7, 69.34]], None)
+    Traceback (most recent call last):
+    TypeError: div must be a number
+
+    >>> matrix_divided(None, 3)
+    Traceback (most recent call last):
+    TypeError: matrix must be a matrix (list of lists) of integers/floats
+
+    >>> matrix = [[1, 2, 3],[4, 5]]
+    >>> matrix_divided(matrix, 2)
+    Traceback (most recent call last):
+    TypeError: Each row of the matrix must have the same size
+
+    >>> matrix_divided([[1, 2, 3],[4, 5, 6]], 0)
+    Traceback (most recent call last):
+    ZeroDivisionError: division by zero
+
+    >>> matrix_divided([[44, 5464, 46], [987, 77, 56]], "STRING")
+    Traceback (most recent call last):
+    TypeError: div must be a number
+
+    >>> matrix_divided()
+    Traceback (most recent call last):
+    TypeError: matrix_divided() missing 2 required positional arguments: 'matrix' and 'div'

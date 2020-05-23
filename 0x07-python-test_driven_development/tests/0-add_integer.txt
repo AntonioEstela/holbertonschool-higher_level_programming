@@ -1,0 +1,44 @@
+=============================
+The ``0-add_integer`` module
+=============================
+
+Using ``add_integer``
+---------------------
+
+Import the function:
+
+    >>> add_integer = __import__('0-add_integer').add_integer
+
+Now test it
+
+correct cases
+    >>> add_integer(21, 34)
+    55
+
+    >>> add_integer(10, -10)
+    0
+
+
+    >>> add_integer(12)
+    110
+
+
+    >>> add_integer(-2, -2)
+    -4
+
+error cases
+    >>> add_integer("Hello", 10)
+    Traceback (most recent call last):
+    TypeError: a must be an integer
+
+    >>> add_integer(float("Holberton"), 98)
+    Traceback (most recent call last):
+    ValueError: could not convert string to float: 'Holberton'
+
+    >>> add_integer()
+    Traceback (most recent call last):
+    TypeError: add_integer() missing 1 required positional argument: 'a'
+
+    >>> add_integer(777, "Antonio")
+    Traceback (most recent call last):
+    TypeError: b must be an integer
