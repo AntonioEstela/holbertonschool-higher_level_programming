@@ -26,6 +26,9 @@ correct cases
     >>> add_integer(-2, -2)
     -4
 
+    >>> add_integer(int(32.4), 8)
+    40
+
 error cases
     >>> add_integer("Hello", 10)
     Traceback (most recent call last):
