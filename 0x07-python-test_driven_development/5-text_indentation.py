@@ -18,9 +18,13 @@ def text_indentation(text):
         length = len(text)
         while i < length:
             print(text[i], end="")
-            if text[i] in delimiters:
-                i += 1
+            if text[i] in delimiters:                
                 print("\n")
+                try:
+                    if text[i + 1] == " ":
+                        i += 1
+                except:
+                    pass
             i += 1
 
     else:
