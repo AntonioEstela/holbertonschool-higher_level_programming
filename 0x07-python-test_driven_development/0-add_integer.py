@@ -1,4 +1,4 @@
-#!/usr/bin/pyhthon3
+#!/usr/bin/python3
 """
 Function that returns the addition of 2 integers.
 Parameters: a and b.
