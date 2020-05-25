@@ -84,7 +84,8 @@ class Rectangle:
         """Method to print something when the instance of a class is
         garbage colection"""
 
-        Rectangle.number_of_instances -= 1
+        if Rectangle.number_of_instances > 0
+            Rectangle.number_of_instances -= 1
         print("Bye rectangle...")
 
     @staticmethod
