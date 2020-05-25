@@ -41,13 +41,13 @@ class Rectangle:
     def width(self, value):
         """Setting a new value for width"""
 
-        self.__width = value
-
-        if type(self.__width) is not int:
+        if type(value) is not int:
             raise TypeError("width must be an integer")
 
-        if self.__width < 0:
+        if value < 0:
             raise ValueError("width must be >= 0")
+
+        self.__width = value
 
     @property
     def height(self):
@@ -58,13 +58,13 @@ class Rectangle:
     def height(self, value):
         """Setting a new value for height"""
 
-        self.__height = value
-
-        if type(self.__height) is not int:
+        if type(value) is not int:
             raise TypeError("height must be an integer")
 
-        if self.__height < 0:
+        if value < 0:
             raise ValueError("height must be >= 0")
+
+        self.__height = value
 
     def area(self):
         """Method to calculate the area of the rectangle"""
@@ -108,4 +108,4 @@ class Rectangle:
     def square(cls, size=0):
         """Class method that returns a new Rectangle instance"""
 
-        return Rectangle(size, size)
+        return cls(size, size)
