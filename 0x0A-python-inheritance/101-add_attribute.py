@@ -3,7 +3,7 @@
 
 
 def add_attribute(obj, att, val):
-    """"Module for add_atribute method"""
+    """Module for add_atribute method"""
     if hasattr(obj, '__dict__') is True:
         setattr(obj, att, val)
     else:
