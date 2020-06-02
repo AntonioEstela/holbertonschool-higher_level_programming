@@ -1,0 +1,70 @@
+=============================
+The ``1-my_list`` module
+=============================
+
+Using ``MyList``
+---------------------
+
+Import the class:
+
+    >>> MyList = __import__('1-my_list').MyList
+
+Now test it:
+
+correct cases
+
+    >>> my_list = MyList()
+    >>> my_list.append(1)
+    >>> my_list.append(4)
+    >>> my_list.append(2)
+    >>> my_list.append(3)
+    >>> my_list.append(5)
+    >>> my_list.print_sorted()
+    [1, 2, 3, 4, 5]
+
+    >>> my_list = MyList()
+    >>> my_list.append(3)
+    >>> my_list.print_sorted()
+    [3]
+
+    >>> my_list.clear()
+    >>> my_list.append(6)
+    >>> my_list.append(7)
+    >>> my_list.append(19)
+    >>> my_list.append(2)
+    >>> my_list.print_sorted()
+    [2, 6, 7, 19]
+
+    >>> my_list.reverse()
+    >>> print(my_list)
+    [2, 19, 7, 6]
+
+    >>> my_list.pop()
+    6
+    >>> my_list.print_sorted()
+    [2, 7, 19]
+
+    >>> my_list = MyList()
+    >>> my_list.print_sorted()
+    []
+
+    >>> my_list.append("E")
+    >>> my_list.print_sorted()
+    ['E']
+
+error cases
+
+    >>> my_list.clear()
+    >>> my_list.append(3)
+    >>> my_list.append("A")
+    >>> my_list.print_sorted()
+    Traceback (most recent call last):
+    TypeError: unorderable types: str() < int()
+
+    >>> my_list = MyList([34, 65], [23, 86])
+    Traceback (most recent call last):
+    TypeError: list() takes at most 1 argument (2 given)
+
+    >>> my_list = MyList(None)
+    Traceback (most recent call last):
+    TypeError: 'NoneType' object is not iterable
