@@ -13,6 +13,6 @@ args = sys.argv[1:]
 nl = []
 
 if os.path.exists('./add_item.json'):
-    nl = load('add_items.json')
+    nl = load('add_item.json')
 
-save(nl + args, 'add_items.json')
+save(nl + args, 'add_item.json')
