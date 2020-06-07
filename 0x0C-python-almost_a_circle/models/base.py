@@ -1,0 +1,74 @@
+#!/usr/bin/python3
+"""Doc"""
+
+import json
+import os.path
+
+class Base:
+    """Base class"""
+
+    __nb_objets = 0
+
+    def __init__(self, id=None):
+        """Init"""
+
+        if id is None:
+            Base.__nb_objets += 1
+            self.id = Base.__nb_objets
+        else:
+            self.id = id
+
+    @staticmethod
+    def to_json_string(list_dictionaries):
+        """json_to_string"""
+
+        if list_dictionaries is None:
+            list_dictionaries = []
+
+        list_dictionaries = json.dumps(list_dictionaries)
+        return str(list_dictionaries)
+
+    @classmethod
+    def save_to_file(cls, list_objs):
+        """save to file"""
+        list_o = []
+        if list_objs is not None:
+            for i in list_objs:
+                list_o.append(cls.to_dictionary(i))
+
+        with open('{}.json'.format(cls.__name__), 'w') as f:
+            f.write(cls.to_json_string(list_o))
+
+    @staticmethod
+    def from_json_string(json_string):
+        """form json string"""
+
+        if json_string is None or len(json_string) == 0:
+            return []
+
+        return json.loads(json_string)
+
+    @classmethod
+    def create(cls, **dictionary):
+        """create"""
+
+        if cls.__name__ == 'Rectangle':
+            from models.rectangle import Rectangle
+            obj = Rectangle(1, 1)
+            obj.update(**dictionary)
+
+        elif cls.__name__ == 'Square':
+            from models.square import Square
+            obj = Square(1)
+            obj.update(**dictionary)
+
+        return obj
+
+    @classmethod
+    def load_from_file(cls):
+        """load_from_file"""
+        a = []
+        if os.path.exists('./{}.json'.format(cls.__name__)):
+            with open('{}.json'.format(cls.__name__), 'r', encoding="utf8") as f:
+                # Ya completaré esto mas adelante :3
+                print("a")
