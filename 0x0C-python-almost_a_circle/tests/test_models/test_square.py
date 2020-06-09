@@ -5,6 +5,7 @@ from unittest.mock import patch
 from models.square import Square
 from models.rectangle import Rectangle
 from models.base import Base
+import os.path
 
 
 class TestSquareMethods(unittest.TestCase):
@@ -13,6 +14,10 @@ class TestSquareMethods(unittest.TestCase):
     def setUp(self):
         """ Method invoked for each test """
         Base._Base__nb_objects = 0
+
+    def tearDown(self):
+        if os.path.exists("Square.json"):
+            os.remove("Square.json")
 
     def test_new_square(self):
         """ Test new square """
