@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-"""Doc"""
+"""Base Class"""
 import json
 import os.path
 
