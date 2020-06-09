@@ -60,5 +60,6 @@ class TestBase(unittest.TestCase):
         self.assertTrue(os.path.exists('Rectangle.json'))
         self.assertTrue(os.path.exists('Square.json'))
 
+
 if __name__ == "__main__":
     unittest.main()

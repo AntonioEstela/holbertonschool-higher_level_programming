@@ -46,7 +46,6 @@ class TestRectangle(unittest.TestCase):
         new = Rectangle(1, 1)
         self.assertIsInstance(new, Base)
 
-
     def test_access_private_attrs(self):
         """ Trying to access to a private attribute """
 
