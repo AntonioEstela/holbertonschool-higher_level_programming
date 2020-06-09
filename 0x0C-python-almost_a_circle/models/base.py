@@ -76,5 +76,4 @@ class Base:
         if os.path.exists('./{}.json'.format(cls.__name__)):
             with open('{}.json'.format(cls.__name__),
                       'r', encoding="utf8") as f:
-                # Ya completaré esto mas adelante :3
                 print("a")
