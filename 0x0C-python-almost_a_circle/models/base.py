@@ -4,6 +4,7 @@
 import json
 import os.path
 
+
 class Base:
     """Base class"""
 
@@ -18,7 +19,6 @@ class Base:
         else:
             Base.__nb_objects += 1
             self.id = Base.__nb_objects
-
 
     @staticmethod
     def to_json_string(list_dictionaries):
@@ -71,6 +71,7 @@ class Base:
         """load_from_file"""
         a = []
         if os.path.exists('./{}.json'.format(cls.__name__)):
-            with open('{}.json'.format(cls.__name__), 'r', encoding="utf8") as f:
+            with open('{}.json'.format(cls.__name__),
+                      'r', encoding="utf8") as f:
                 # Ya completaré esto mas adelante :3
                 print("a")
