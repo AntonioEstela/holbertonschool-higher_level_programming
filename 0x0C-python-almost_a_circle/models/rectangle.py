@@ -10,20 +10,6 @@ class Rectangle(Base):
 
     def __init__(self, width, height, x=0, y=0, id=None):
         """Init"""
-        my_dict = {'width': width, 'height': height, 'x': x, 'y': y}
-
-        for k, v in my_dict.items():
-            if type(v) is not int:
-                raise TypeError("{} must be an integer".format(k))
-
-        for k, v in {'x': x, 'y': y}.items():
-            if v < 0:
-                raise ValueError("{} must be >= 0".format(k))
-
-        for k, v in {'width': width, 'height': height}.items():
-            if v <= 0:
-                raise ValueError("{} must be > 0".format(k))
-
         super().__init__(id)
         self.width = width
         self.height = height

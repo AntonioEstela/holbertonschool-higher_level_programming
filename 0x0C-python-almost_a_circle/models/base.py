@@ -1,17 +1,16 @@
 #!/usr/bin/python3
-"""
-Base Class
-"""
+"""Doc"""
 import json
-from os import path
+import os.path
 
 
 class Base:
-    """Base Class"""
+    """Base class"""
+
     __nb_objects = 0
 
     def __init__(self, id=None):
-        """Initializate"""
+        """Initializes instances"""
         if id is not None:
             self.id = id
         else:
