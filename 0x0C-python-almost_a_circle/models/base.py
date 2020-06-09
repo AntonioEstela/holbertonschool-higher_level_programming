@@ -71,3 +71,5 @@ class Base:
             with open('{}.json'.format(cls.__name__), 'r') as f:
                 return [cls.create(**i) for i in
                         cls.from_json_string(f.read())]
+        else:
+            return a
