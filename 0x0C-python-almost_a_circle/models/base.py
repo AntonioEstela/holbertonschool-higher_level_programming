@@ -69,5 +69,5 @@ class Base:
         a = []
         if os.path.exists('./{}.json'.format(cls.__name__)):
             with open('{}.json'.format(cls.__name__), 'r') as f:
-                return [cls.create(**i) for i in 
+                return [cls.create(**i) for i in
                         cls.from_json_string(f.read())]
