@@ -36,7 +36,7 @@ class Square(Rectangle):
     def update(self, *args, **kwargs):
         """update"""
         if args:
-            a = ["id", "width", "height", "x", "y"]
+            a = ["id", "size", "x", "y"]
             for i, e in enumerate(args):
                 setattr(self, a[i], e)
             return
