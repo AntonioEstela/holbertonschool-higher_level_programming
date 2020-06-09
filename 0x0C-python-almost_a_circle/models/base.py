@@ -68,6 +68,6 @@ class Base:
         """load_from_file"""
         a = []
         if os.path.exists('./{}.json'.format(cls.__name__)):
-            with open('{}.json'.format(cls.__name__),
-                      'r', encoding="utf8") as f:
-                print("a")
+            with open('{}.json'.format(cls.__name__), 'r') as f:
+                return [cls.create(**i) for i in 
+                        cls.from_json_string(f.read())]

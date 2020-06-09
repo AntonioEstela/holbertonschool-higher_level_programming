@@ -124,32 +124,16 @@ class Rectangle(Base):
             print("")
 
     def update(self, *args, **kwargs):
-        """Update"""
+        """update"""
+        if args:
+            a = ["id", "width", "height", "x", "y"]
+            for i, e in enumerate(args):
+                setattr(self, a[i], e)
+            return
 
-        for i in range(len(args)):
-            if i == 0:
-                self.id = args[i]
-            elif i == 1:
-                self.width = args[i]
-            elif i == 2:
-                print(args[i])
-                self.height = args[i]
-            elif i == 3:
-                self.x = args[i]
-            elif i == 4:
-                self.y = args[i]
-
-        if args is None or len(args) == 0:
-            if 'id' in kwargs:
-                self.id = kwargs['id']
-            if 'width' in kwargs:
-                self.__width = kwargs['width']
-            if 'height' in kwargs:
-                self.__height = kwargs['height']
-            if 'x' in kwargs:
-                self.__x = kwargs['x']
-            if 'y' in kwargs:
-                self.__y = kwargs['y']
+        for x, y in kwargs.items():
+            if hasattr(self, x):
+                setattr(self, x, y)
 
     def to_dictionary(self):
         """to dictionary"""
