@@ -31,6 +31,7 @@ class Rectangle(Base):
         self.y = y
 
     def __str__(self):
+        """str"""
         return "[{}] ({}) {}/{} - {}/{}".format(type(self).__name__,
                                                 self.id, self.__x,
                                                 self.__y, self.__width,
