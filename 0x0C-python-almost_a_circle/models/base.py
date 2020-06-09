@@ -7,7 +7,7 @@ import os.path
 class Base:
     """Base class"""
 
-    __nb_objets = 0
+    __nb_objects = 0
 
     def __init__(self, id=None):
         """ Initializes instances """
