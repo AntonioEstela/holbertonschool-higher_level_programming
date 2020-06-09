@@ -1,6 +1,5 @@
 #!/usr/bin/python3
 """Doc"""
-
 import json
 import os.path
 
