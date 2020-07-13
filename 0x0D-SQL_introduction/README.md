@@ -34,7 +34,7 @@ All the following files are scripts of MySQL:
 | [`103-max_state.sql`](103-max_state.sql) | Displays the max temperature of each state (ordered by State name) |
 
 ## License
-<a href="url"><img src="/images/mysql-icon.png" align="middle"></a> SQL - Introduction is open source and therefore free to download and use without permission.
+<a href="images/mysql-icon.png"><img src="/images/mysql-icon.png" align="middle"></a> SQL - Introduction is open source and therefore free to download and use without permission.
 
 
 ## Developed by
