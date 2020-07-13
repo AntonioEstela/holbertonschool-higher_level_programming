@@ -33,6 +33,10 @@ All the following files are scripts of MySQL:
 | [`102-top_city.sql`](102-top_city.sql) | Displays the top 3 of cities temperature during July and August ordered by temperature (descending) |
 | [`103-max_state.sql`](103-max_state.sql) | Displays the max temperature of each state (ordered by State name) |
 
+## License
+<a href="url"><img src="https://e7.pngegg.com/pngimages/252/959/png-clipart-mysql-database-server-microsoft-sql-server-others-text-logo.png" align="middle" width="60" height="60"></a>SQL - Introduction is open source and therefore free to download and use without permission.
+
+
 ## Developed by
 
 ### [**Antonio Estela**](https://github.com/AntonioEstela) Full Stack Software Engineer sutdent at [**Holberton School**](https://www.holbertonschool.com/)
