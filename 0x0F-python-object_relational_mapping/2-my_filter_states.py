@@ -14,7 +14,7 @@ if __name__ == '__main__':
 
     cursor = database.cursor()
 
-    cursor.execute("""SELECT id, name FROM states WHERE name = '{}'
+    cursor.execute("""SELECT id, name FROM states WHERE name LIKE BINARY '{}'
                       ORDER BY states.id;""".format(sys.argv[4]))
 
     states = cursor.fetchall()
