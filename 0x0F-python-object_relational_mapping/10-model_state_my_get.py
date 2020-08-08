@@ -4,7 +4,7 @@
 import sys
 import sqlalchemy as db
 from model_state import Base, State
-from sqlalchemy import text
+from sqlalchemy.orm import sessionmaker
 
 if __name__ == '__main__':
 
@@ -14,19 +14,10 @@ if __name__ == '__main__':
                               pool_pre_ping=True)
 
     metadata = db.MetaData()
+    Session = sessionmaker(bind=engine)
+    session = Session()
+    result = session.query(State).filter(State.name == sys.argv[4]).first()
 
-    conn = engine.connect()
-    ins = text("INSERT INTO states (name) VALUES ('Louisiana')")
-    result = conn.execute(ins)
-
-    print_id = text("SELECT id, name FROM states WHERE name = 'Louisiana';")
-    result = conn.execute(print_id).fetchall()
-
-    try:
-        if result[0] is not None:
-            for i in result:
-                print('{}'.format(i[0]))
-    except IndexError:
-        pass
+    print(result.id if result else "Not found")
 
     session.close()
