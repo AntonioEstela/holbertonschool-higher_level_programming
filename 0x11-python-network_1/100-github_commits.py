@@ -18,4 +18,4 @@ if __name__ == "__main__":
 
     for commit in range(10):
         print('{}: {}'.format(reqjson[commit].get(
-            'sha'), reqjson[commit]['commit']['author']['name']))
+            'sha'), reqjson[commit].get('commit').get('author').get('name')))
