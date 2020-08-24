@@ -16,6 +16,6 @@ if __name__ == "__main__":
     req = requests.get(url)
     reqjson = req.json()
 
-    for commit in range(10):
-        print('{}: {}'.format(reqjson[commit].get(
-            'sha'), reqjson[commit].get('commit').get('author').get('name')))
+    for commit in reqjson[:10]:
+        print('{}: {}'.format(commit.get(
+            'sha'), commit.get('commit').get('author').get('name')))
