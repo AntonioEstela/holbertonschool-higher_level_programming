@@ -6,7 +6,7 @@
 import sys
 import requests
 
-if __name__ == '__main__':
+if __name__ == "__main__":
 
     try:
         letter = sys.argv[1]
