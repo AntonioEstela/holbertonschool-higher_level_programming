@@ -1,22 +1,26 @@
 #!/usr/bin/python3
-"""Script that takes URL and a email, sends POST reques tto the URL"""
+"""Write a Python script that takes in a letter and sends a POST\
+ request to http://0.0.0.0:5000/search_user \
+with the letter as a parameter."""
 
+import sys
 import requests
-from sys import argv
 
 if __name__ == "__main__":
-    if len(argv) == 1:
-        q = ""
-    else:
-        q = argv[1]
 
-    res = requests.post("http://0.0.0.0:5000/search_user", data={"q": q})
+    if len(sys.argv) == 1:
+        letter = ""
+
+    else:
+        letter = sys.argv[1]
+
+    req = requests.post("http://0.0.0.0:5000/search_user", data={"q": letter})
 
     try:
-        data = res.json()
-        if data:
-            print("[{}] {}".format(data["id"], data["name"]))
+        reqjson = req.json()
+        if reqjson:
+            print("[{}] {}".format(reqjson["id"], reqjson["name"]))
         else:
             print("No result")
-    except:
+    except Exception:
         print("Not a valid JSON")
