@@ -14,10 +14,7 @@ if __name__ == "__main__":
     else:
         letter = sys.argv[1]
 
-    url = 'http://0.0.0.0:5000/search_user'
-    value = {'q': letter}
-
-    req = requests.post(url, value)
+    req = requests.post('http://0.0.0.0:5000/search_user', data={'q': letter})
 
     try:
         reqjson = req.json()
