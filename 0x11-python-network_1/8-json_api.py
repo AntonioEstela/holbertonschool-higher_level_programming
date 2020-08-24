@@ -8,10 +8,11 @@ import requests
 
 if __name__ == "__main__":
 
-    try:
-        letter = sys.argv[1]
-    except Exception:
+    if len(sys.argv) == 1:
         letter = ""
+
+    else:
+        letter = sys.argv[1]
 
     url = 'http://0.0.0.0:5000/search_user'
     value = {'q': letter}
