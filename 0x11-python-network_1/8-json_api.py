@@ -14,13 +14,13 @@ if __name__ == "__main__":
     else:
         letter = sys.argv[1]
 
-    req = requests.post('http://0.0.0.0:5000/search_user', data={'q': letter})
+    req = requests.post("http://0.0.0.0:5000/search_user", data={"q": letter})
 
     try:
         reqjson = req.json()
         if reqjson:
-            print('[{}] {}'.format(reqjson['id'], reqjson['name']))
+            print("[{}] {}".format(reqjson["id"], reqjson["name"]))
         else:
-            print('No result')
+            print("No result")
     except Exception:
-        print('Not a valid JSON')
+        print("Not a valid JSON")
