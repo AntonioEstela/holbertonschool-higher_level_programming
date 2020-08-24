@@ -20,9 +20,9 @@ if __name__ == '__main__':
 
     try:
         reqjson = req.json()
-        if reqjson == {}:
-            print('No result')
-        else:
+        if reqjson:
             print('[{}] {}'.format(reqjson.get('id'), reqjson.get('name')))
-    except ValueError:
-        print('Not a valid result')
+        else:
+            print('No result')
+    except Exception:
+        print('Not a valid JSON')
