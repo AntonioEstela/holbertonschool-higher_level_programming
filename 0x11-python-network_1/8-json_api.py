@@ -21,7 +21,7 @@ if __name__ == "__main__":
     try:
         reqjson = req.json()
         if reqjson:
-            print('[{}] {}'.format(reqjson.get('id'), reqjson.get('name')))
+            print('[{}] {}'.format(reqjson['id'], reqjson['name']))
         else:
             print('No result')
     except Exception:
