@@ -17,14 +17,17 @@ if __name__ == "__main__":
 
     reqjson = req.json()
 
-    try:
+    """ try:
         if not reqjson or reqjson.get('message') == 'Not Found':
             print('Not Found')
             exit()
 
     except AttributeError:
-        pass
+        pass """
 
-    for commit in range(10):
-        print('{}: {}'.format(reqjson[commit].get(
-            'sha'), reqjson[commit].get('commit').get('author').get('name')))
+    for count, commit in enumerate(reqjson):
+        if count == 10:
+            break
+
+        print('{}: {}'.format(commit.get('sha'), commit.get(
+            'commit').get('author').get('name')))
