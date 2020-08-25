@@ -1,12 +1,12 @@
 #!/usr/bin/python3
-"""Python script that lists 10 commits (from the most recent to oldest)\
- from a given repository of a given user in github"""
+"""
+Get the 10 most recent commits from the repository specified
+"""
+
 
 import sys
 import requests
-
 if __name__ == "__main__":
-
     repository = sys.argv[1]
     owner = sys.argv[2]
 
@@ -18,4 +18,4 @@ if __name__ == "__main__":
 
     for commit in range(10):
         print('{}: {}'.format(reqjson[commit].get(
-            'sha'), reqjson[commit]['commit']['author']['name']))
+            'sha'), reqjson[commit].get('commit').get('author').get('name')))
