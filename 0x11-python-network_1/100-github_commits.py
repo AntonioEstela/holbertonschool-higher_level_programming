@@ -7,14 +7,14 @@ import requests
 
 if __name__ == "__main__":
 
-    repository = sys.argv[1]
-    owner = sys.argv[2]
-
-    url = 'https://api.github.com/repos/{}/{}/commits'.format(
-        owner, repository)
-
-    req = requests.get(url)
     try:
+        repository = sys.argv[1]
+        owner = sys.argv[2]
+
+        url = 'https://api.github.com/repos/{}/{}/commits'.format(
+            owner, repository)
+
+        req = requests.get(url)
         reqjson = req.json()
 
         for commit in reqjson[:10]:
