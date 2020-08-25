@@ -1,6 +1,6 @@
 #!/usr/bin/python3
-"""Python script that lists 10 commits (from the most recent to oldest) \
-from a given repository of a given user in github"""
+"""Python script that lists 10 commits (from the most recent to oldest)\
+ from a given repository of a given user in github"""
 
 import sys
 import requests
