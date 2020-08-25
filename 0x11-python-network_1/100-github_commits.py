@@ -10,7 +10,8 @@ if __name__ == "__main__":
     repository = sys.argv[1]
     owner = sys.argv[2]
 
-    url = 'https://api.github.com/repos/{}/{}/commits'.format(owner, repository)
+    url = 'https://api.github.com/repos/{}/{}/commits'.format(
+        owner, repository)
 
     req = requests.get(url)
 
@@ -28,4 +29,5 @@ if __name__ == "__main__":
         if count == 10:
             break
 
-        print('{}: {}'.format(commit.get('sha'),commit.get('commit').get('author').get('name')))
+        print('{}: {}'.format(commit.get('sha'), commit.get(
+            'commit').get('author').get('name')))
