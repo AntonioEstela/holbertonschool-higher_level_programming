@@ -14,8 +14,11 @@ if __name__ == "__main__":
         owner, repository)
 
     req = requests.get(url)
-    reqjson = req.json()
+    try:
+        reqjson = req.json()
 
-    for commit in reqjson[:10]:
-        print('{}: {}'.format(commit.get('sha'), commit.get(
-            'commit').get('author').get('name')))
+        for commit in reqjson[:10]:
+            print('{}: {}'.format(commit.get('sha'), commit.get(
+                'commit').get('author').get('name')))
+    except Exception as error:
+        print(error)
