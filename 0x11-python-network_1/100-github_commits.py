@@ -25,9 +25,6 @@ if __name__ == "__main__":
     except AttributeError:
         pass
 
-    for count, commit in enumerate(reqjson):
-        if count == 10:
-            break
-
-        print('{}: {}'.format(commit.get('sha'), commit.get(
-            'commit').get('author').get('name')))
+    for commit in range(10):
+        print('{}: {}'.format(reqjson[commit].get(
+            'sha'), reqjson[commit].get('commit').get('author').get('name')))
