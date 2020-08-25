@@ -23,5 +23,5 @@ if __name__ == "__main__":
                                   reqjson[commit].get('commit')
                                   .get('author').get('name')))
 
-    except Exception as error:
+    except IndexError as error:
         print(error)
