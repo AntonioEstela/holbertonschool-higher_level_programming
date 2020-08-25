@@ -17,14 +17,6 @@ if __name__ == "__main__":
 
     reqjson = req.json()
 
-    """ try:
-        if not reqjson or reqjson.get('message') == 'Not Found':
-            print('Not Found')
-            exit()
-
-    except AttributeError:
-        pass """
-
     for count, commit in enumerate(reqjson):
         if count == 10:
             break
