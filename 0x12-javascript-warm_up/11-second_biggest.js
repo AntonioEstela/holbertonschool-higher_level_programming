@@ -4,6 +4,6 @@ const numbers = process.argv.slice(2);
 if (numbers.length < 2) {
   console.log('0');
 } else {
-  numbers.sort().reverse();
-  console.log(numbers[1]);
+  numbers.sort();
+  console.log(numbers[numbers.length - 2]);
 }
