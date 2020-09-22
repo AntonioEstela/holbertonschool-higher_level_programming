@@ -9,8 +9,8 @@ request(url, (error, response, body) => {
   const films = data.results;
   let count = 0;
 
-  for (const film in films) {
-    const characters = films[film].characters;
+  for (const film of films) {
+    const characters = film.characters;
     if (characters.includes(character)) {
       count++;
     }
