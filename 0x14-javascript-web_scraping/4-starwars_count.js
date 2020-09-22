@@ -10,10 +10,11 @@ request(url, (error, response, body) => {
     let count = 0;
 
     for (const film of data.results) {
-      for (const char of film.characters)
+      for (const char of film.characters) {
         if (char.endsWith('18/')) {
           count++;
         }
+      }
     }
     console.log(count);
   }
