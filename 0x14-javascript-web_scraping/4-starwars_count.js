@@ -3,10 +3,10 @@ const request = require('request');
 const url = 'https://swapi-api.hbtn.io/api/films';
 const character = 'https://swapi-api.hbtn.io/api/people/18/';
 
-request(url, (error, body) => {
+request(url, (error, response, body) => {
   if (error) throw error;
-  const response = JSON.parse(body.toJSON().body);
-  const films = response.results;
+  const data = JSON.parse(body);
+  const films = data.results;
   let count = 0;
 
   for (const film in films) {
